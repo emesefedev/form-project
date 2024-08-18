@@ -1,11 +1,15 @@
 @font-face {
     font-family: logo-font;
     src: url(fonts/webfontkit-20240818-065021/gongn___-webfont.woff) format("woff");
-  }
+}
 
 body {
     font-family: sans-serif;
     margin: 0;
+}
+
+input {
+    width: 300px;
 }
 
 img {
@@ -14,6 +18,7 @@ img {
 
 .logo-font {
     font-family: "logo-font", serif;
+    font-size: 1.5rem;
 }
 
 .bg-image {
@@ -25,12 +30,24 @@ img {
     background-color:rgba(255, 255, 255, 0.5);
 }
 
+.bg-light {
+    background-color: rgb(200,200, 200);
+}
+
 .flex {
     display: flex;
 }
 
 .flex-col {
     flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-30 {
+    gap: 30px;
 }
 
 .flex-it {
