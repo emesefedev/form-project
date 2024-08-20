@@ -16,51 +16,52 @@
         </div>  
 
         <div class="flex flex-col flex-it-2">
-            <div class="flex-it">
-                <p>Sign up now to get started</p>
+            <div class="flex-it pl-50 pr-150 bg-light">
+                <p class="bigger-text">Sign up now to get started</p>
 
-                <p>You know you want to</p>
+                <p class="bigger-text">You know you want to</p>
             </div>
-            <div class="flex-it">
-                <p>Let's do this</p>
-                <form action="" method="post" class="flex flex-wrap gap-30">
-                    <div class="flex flex-col">
+            <div class="flex-it pl-50 pr-150 gap-50">
+                <p class="bigger-text">Let's do this!</p>
+                <form id="my-form" action="" method="" class="flex flex-wrap gap-50 row-gap-20">
+                    <div class="flex flex-col gap-2">
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" id="first-name" name="firstName"
                             placeholder="Spongebob">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col gap-2">
                         <label for="last-name">LAST NAME</label>
                         <input type="text" id="last-name" name="lastName"
                             placeholder="Squarepants">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col gap-2">
                         <label for="email">EMAIL</label>
                         <input type="email" id="email" name="email"
                             placeholder="spongebob@squarepants.com">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col gap-2">
                         <label for="phone">PHONE NUMBER</label>
                         <input type="tel" id="phone" name="phone"
                             placeholder="123456789">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col gap-2">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password"
+                               minlength="3">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col gap-2">
                         <label for="password-confirm">CONFIRM PASSWORD</label>
                         <input type="password" 
                                 id="password-confirm" name="passwordConfirm">
                     </div>        
                 </form>
             </div>
-            <div class="flex-it">
-                <button>
+            <div class="flex-it flex flex-col pl-50 pr-150 py-25 bg-light gap-25">
+                <button type="submit" form="my-form">
                     Create Account
                 </button>
 
-                <p>Already have an account? <a href="">Log in</a></p>
+                <p class="m-0">Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </body>
