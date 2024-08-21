@@ -56,6 +56,9 @@ label {
     color: var(--dark-gray);
 }
 
+p {
+    margin: 0;
+}
 /* Link styles */
 
 .not-underlined {
@@ -100,9 +103,10 @@ label {
 
 .logo-footer {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     color: white;
     text-align: center;
+    font-size: 0.6rem;
 }
 
 /* Backgrounds */
@@ -168,6 +172,11 @@ label {
     justify-content: center;
 }
 
+
+.justify-end {
+    justify-content: end;
+}
+
 .align-center {
     align-items: center;
 }
@@ -208,12 +217,12 @@ label {
     padding-left: 50px;
 }
 
-.pr-150 {
-    padding-right: 150px;
+.pr-260 {
+    padding-right: 260px;
 }
 
 /* Margin */
 
-.m-0 {
-    margin: 0;
+.mb-25 {
+    margin-bottom: 25px;
 }
