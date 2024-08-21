@@ -31,6 +31,7 @@ button {
 
 input {
     width: 200px;
+    height: 1.5rem;
     border: solid;
     border-width: 1px;
     border-color: var(--light-gray);
@@ -41,9 +42,15 @@ input:focus {
     border-color: var(--yellow-primary);
 }
 
-input:invalid {
+input:invalid:not(:placeholder-shown) {
     border-color: var(--red);
 }
+
+input[type="password"]:invalid#password + span::after {
+    content: "* Passwords do not match";
+    font-size: 0.5rem;
+    color: red;
+  } 
 
 img {
     height: 100%;
