@@ -8,30 +8,116 @@
     </head>
 
     <body class="flex w-full h-full">
-        <div class="flex flex-col justify-center flex-it bg-image">
-            <div class="flex flex-col align-center h-300px bg-white-50 py-10">
+        <div class="flex-it bg-image logo-container">
+            <div class="flex flex-col align-center w-100p h-300px bg-white-75 py-10 logo-img">
                 <img src="images/emesefedev-logo.png" alt="Emesefe logo">
                 <p class="logo-font">EMESEFEDEV</p>
+            </div>
+
+            <div class="w-100p logo-footer">
+                <p> Photo by 
+                    <a 
+                        class="white-text" 
+                        href="https://unsplash.com/es/@georgie_cobbs">
+                        Georgie Cobbs
+                    </a> 
+                    on 
+                    <a 
+                        class="white-text"
+                        href="https://unsplash.com/es/fotos/teclado-inalambrico-gris-de-apple-junto-a-la-tableta-negra-y-el-lapiz-optico-muOHbrFGEQY">
+                        Unsplash
+                    </a>
+                </p>
             </div>
         </div>  
 
         <div class="flex flex-col flex-it-2">
-            <div class="flex-it">
-                <p>Sign up now to get started</p>
-
-                <p>You know you want to</p>
+            <div class="flex-it flex flex-col justify-end pl-50 pr-260 py-25  gap-25 bg-light">
+                <p class="bigger-text">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+                <p class="bigger-text mb-25">You know you want to.</p>
             </div>
-            <div class="flex-it">
-                <form action="" method="post">
-
+            <div class="flex-it pl-50 pr-260 py-25 shadowy">
+                <p class="bigger-text mb-25">Let's do this!</p>
+                <form id="my-form" action="" method="" class="flex flex-wrap gap-50 row-gap-20">
+                    <div class="flex flex-col gap-2">
+                        <label for="first-name">FIRST NAME</label>
+                        <input 
+                            type="text" 
+                            id="first-name" 
+                            name="firstName"
+                            placeholder="Spongebob"
+                            required
+                        >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="last-name">LAST NAME</label>
+                        <input 
+                            type="text" 
+                            id="last-name" 
+                            name="lastName"
+                            placeholder="Squarepants"
+                            required
+                        >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="email">EMAIL</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            placeholder="spongebob@squarepants.com"
+                            required
+                        >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone"
+                            placeholder="123456789"
+                            minlength="9"
+                            maxlength="9"
+                            required
+                        >
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="password">PASSWORD</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            minlength="3"
+                            maxlength="30"
+                            required
+                        >
+                        <span></span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <input 
+                            type="password" 
+                            id="password-confirm" 
+                            name="passwordConfirm"
+                            minlength="3"
+                            maxlength="30"
+                            required
+                        >
+                        <span></span>
+                    </div> 
+                           
                 </form>
             </div>
-            <div class="flex-it">
-                <button>
+            <div class="z-custom flex-it flex flex-col pl-50 pr-260 py-25 bg-light gap-25">
+                <button type="submit" form="my-form">
                     Create Account
                 </button>
 
-                <p>Already have an account? <a href="">Log in</a></p>
+                <p>
+                    Already have an account? 
+                    <a href="" class="yellow-text bold-text not-underlined">Log in</a>
+                </p>
             </div>
         </div>
     </body>
